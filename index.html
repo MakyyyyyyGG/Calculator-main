@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+Favorite car:
+<input type="button" id="myBtn" value="Volvo">
+<h2 id="screen"></h2>
+
+<p>Click the button below to change the text displayed on the input button above.</p>
+
+<button onclick="myFunction()">Try it</button>
+
+<script>
+function myFunction() {
+  let volvoButton = document.getElementById("myBtn");
+  let screen = document.getElementById("screen");
+  
+  // Get the value of the input button
+  let volvoValue = volvoButton.value;
+  
+  // Set the text content of the <h2> element to the value of the input button
+  screen.innerHTML = volvoValue;
+}
+</script>
+
+</body>
+</html>

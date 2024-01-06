@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit&display=swap');
+*{
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+}
+body{
+    color: white;
+    font-family: 'Outfit', sans-serif;
+    background: rgb(5,4,33);
+    background-image: linear-gradient(to left top, #d16ba5, #c777b9, #ba83ca, #aa8fd8, #9a9ae1, #8aa7ec, #79b3f4, #69bff8, #52cffe, #41dfff, #46eefa, #5ffbf1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+}
+.calculator{
+    /* From https://css.glass */
+    background: rgba(13, 78, 159, 0.28);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    padding: 20px;
+}
+
+.screen{
+    margin-inline: 10px;
+    background: rgba(17, 87, 156, 0.233);
+    height: 100px;
+    border-radius: 16px;
+    padding-block: 20px;
+    margin-block: 20px;
+    padding-right: 10px;
+    display: flex;
+    align-items: center;
+}
+.text-container{
+    margin-left: auto;
+}
+.display{
+    transition: .3s;
+}
+span{
+    position: absolute;
+    top: 50px;
+    right: 40px;
+}
+
+.dial input{
+   /* From https://css.glass */
+    background: rgba(17, 87, 156, 0.233);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(0.6px);
+    -webkit-backdrop-filter: blur(0.6px);
+    color: white;
+    font-size: 1.5rem;
+    font-weight: bold;
+    font-family: 'Outfit', sans-serif;
+    height: 70px;
+    width: 70px;
+    border-radius: 1rem;
+    border: none;
+    margin: 10px;
+    transition: .3s ease;
+}
+.dial input:hover{
+    cursor: pointer;
+    background: rgba(17, 87, 156, 0.94);
+
+}
+.long{
+    position: absolute;
+    display: inline-block;
+    height: 160px;
+}
+.long input{
+    height: 100%;
+}
+
+#operator{
+    /* From https://css.glass */
+background: rgba(55, 57, 197, 0.397);
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(0.6px);
+-webkit-backdrop-filter: blur(0.6px);
+}
+.hor-long{
+    display: inline-block;
+    width: 160px;
+}
+.hor-long input{
+    width: 100%;
+}
+footer{
+    position: absolute;
+    bottom: 0;
+    text-align: center;
+    margin-bottom: 20px;
+}
